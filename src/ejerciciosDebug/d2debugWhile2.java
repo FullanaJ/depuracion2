@@ -20,10 +20,11 @@ public class d2debugWhile2 {
 		Scanner sc = new Scanner(System.in);
 		num = sc.nextInt();
 		
-		System.out.print("Imprimo los numeros");
+		System.out.print("Imprimo los numeros \n");
 		
-		while (i<num) {
+		while (i<=num) {
 			System.out.println("Numero "+i);
+                        i++;
 		}
 
 	}
