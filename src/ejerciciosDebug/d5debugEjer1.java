@@ -27,12 +27,11 @@ public class d5debugEjer1 {
 	}
 	
 	public static boolean esEntero(String str) {
-		boolean respuesta = true;
+		boolean respuesta = false;
 		System.out.println("texto recibido en funcion: "+str);
 		for (int i=0; i<str.length(); i++ ) {
-			if (str.charAt(i)>'0' || str.charAt(i)<'9' ) {
-				respuesta = false;
-				return respuesta;
+			if (str.charAt(i)>'0' && str.charAt(i)<'9'||  str.charAt(i)=='+'|| str.charAt(i)=='-' ) {
+				respuesta = true;
 			}
 		}
 		

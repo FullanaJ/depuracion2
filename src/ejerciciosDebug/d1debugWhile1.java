@@ -22,7 +22,7 @@ public class d1debugWhile1 {
 		
 		System.out.println("Imprimo los numeros");
 		
-		while (i>num) {
+		while (i<=num) {
 			System.out.println("Numero "+i);
 			i++;
 		}

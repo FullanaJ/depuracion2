@@ -10,7 +10,7 @@ public class d4debugFactorial {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int num, num2, fact;
+		int num, num2, fact=0;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Entra numero a calcular factorial: ");
 		num = sc.nextInt();
@@ -18,9 +18,9 @@ public class d4debugFactorial {
 		num2 = num;
 		while (num2>2) {
 			num2 = num2 -1;
-			fact = num * num2;			
+			fact =fact * num2;			
 		}
-		System.out.print("El factorial de "+num+" es "+fact);
+		System.out.print("El factorial de "+num+" es "+fact +"\n");
 
 	}
 

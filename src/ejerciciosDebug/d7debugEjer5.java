@@ -35,9 +35,9 @@ public class d7debugEjer5 {
 		System.out.print("Entra numero: ");
 		Scanner sc = new Scanner(System.in);
 		num = sc.nextInt();
-		for (int i=1; i<=num; i++)
+		for (int i=1; i<num; i++)
 			imprimirLinea(i,num);
-		for (int i=num; i<=1; i--)
+		for (int i=num; i>=1; i--)
 			imprimirLinea(i,num);
 		
 		//System.out.println("FIN");
@@ -45,14 +45,15 @@ public class d7debugEjer5 {
 	}
 	
 	public static void imprimirLinea(int i, int num) {
-		for (int j=1; j<=num; j++) 
+		for (int j=1; j<=i; j++) 
 			System.out.print("*");
 		for (int j=1; j<=num-i; j++)
 			System.out.print(" ");
 		for (int j=1; j<=num-i; j++) 
 			System.out.print(" ");
-		for (int j=1; j<=num; j++) 
-			System.out.print("*");	
+		for (int j=1; j<=i; j++) 
+			System.out.print("*");
+                
 		System.out.println();
 	}
 
